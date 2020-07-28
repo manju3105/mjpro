@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="home">
+        <nav class="desktop-nav">
+          <div class="logo">
+            <a href="#home">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#about-me">About Project</a>
+            </li>
+            <li>
+              <a href="#work">Results</a>
+            </li>
+            <li>
+              <a href="#testimonials">Paper Published</a>
+            </li>
+            <li>
+              <a href="#contact">Applications</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-nav">
+          <div class="logo">
+            <a href="#home">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <div class="menu-btn">
+            <img src="images/menu-icon.png" alt="" />
+          </div>
+        </nav>
+
+        <div class="mobile-menu-container">
+          <ul>
+            <li>
+              <a href="#about-me">About Project</a>
+            </li>
+            <li>
+              <a href="#work">Results</a>
+            </li>
+            <li>
+              <a href="#testimonials">Paper Published</a>
+            </li>
+            <li>
+              <a href="#contact">Applications</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-container">
+          <div class="left">
+            <p class="i-am">
+              <u>INTELLIGENT SOLAR TRACKER 
+                  <br>BOT USING IMAGE PROCESSING</u>
+                
+                <br>&nbsp &nbsp &nbsp &nbsp &nbsp    by,
+              <br>&nbsp   &nbsp   Vardhan CH
+                <br>&nbsp   &nbsp   Gagan GL
+                <br>&nbsp   &nbsp  Manjunatha MJ
+                <br>&nbsp   &nbsp  VijayKumar G N
+                <br><u>Under the guidance of</u>
+                <br><strong>&nbsp &nbsp       Smitha S M</strong>
+                <br>Asst Professor Dept of ECE
+              
+                
+            
+            </p>
+            <h2>
+              
+            </h2>
+            <h2>
+              
+            </h2>
+
+            
+          </div>
+
+          <div class="right">
+            <img src="images/hero-image.png" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <section id="about-me">
+        <h2>About Project</h2>
+        <div class="section-content">
+          <p>
+            The idea of producing solar energy using solar bot is an existing technology, but
+            its main objective is to serve on transportation platform, but main objective of our project
+            is to make solar panel movable to more intensified area of sunlight, So that the electricity
+            generation will be more and energy consumed for bot movement will be less
+          </p>
+          <p>
+            It is a concept to avoid wastage of solar panel efficiency and increase the electricity
+production in smart manner, Solar panels are very expensive so proper usage of them will be
+optimistic
+          </p>
+          <p>
+            This smart
+solar tracking bot takes the advantage of existing GSM network so that we can know the
+location of bot and because of continues live audio and video transmission it will useful
+for surveillance purpose.Our project prototype results says that the system works better in
+large scale and more real time efficiency can be experienced.
+          </p>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>Results</h2>
+
+        <div class="section-content">
+          <div class="work-container">
+            <img src="images/project1.png" alt="" />
+            <img src="images/project2.png" alt="" />
+            <img src="images/project3.png" alt="" />
+            <img class="mobile-hide" src="images/project4.png" alt="" />
+            <img class="mobile-hide" src="images/project5.png" alt="" />
+            
+          </div>
+          
+        </div>
+      </section>
+
+<div id="testimonials"></div>
+
+      <section class="testimonials-section">
+        <p>The paper was published in the International Journal of Innovative Science and Research Technology</p>
+        <p><a href="https://ijisrt.com/intelligent-solar-tracker-vehicle-for-supply-channel-of-electric-vehicle-need-using-image-processing-and-mobile-network" style="color:red">Intelligent Solar Tracker Vehicle for Supply
+Channel of Electric Vehicle Need Using Image Processing and Mobile Network</a></p>
+      </section>
+      <section id="contact">
+        <h2>Applications</h2>
+
+        <div class="section-content">
+          <p>This Bot can be used as the power generator system for the local battery stations and can also serve as a mobile battery station for the electric vehicle with GSM based delivery service. Some of the other applications of proposed systems are listed below:</p>
+      <ul style="list-style-type:disc">
+         <li>Power generation unit in remote areas</li>
+         <li>Can be used for commodity delivery system like amazon, flipcart as a local delivery.</li>
+         <li>Can be used in malls as automated follower cart</li>
+          <li>Can be used as a lightweight local domestic transport system.</li>
+          <li>Used as water sprinkler in low water irrigation systems.</li>
+          <li>Solar tracking bot is applicable in Military Applications.</li>
+      </ul>
+        </div>
+      </section>
+
+      <footer>
+        This website is Developed by Manjunatha M J
+      </footer>
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const mobileMenuContainer = document.querySelector(
+        ".mobile-menu-container"
+      );
+      const mobileMenuItems = document.querySelectorAll(
+        ".mobile-menu-container ul li a"
+      );
+
+      menuBtn.addEventListener("click", function () {
+        mobileMenuContainer.classList.toggle("active");
+      });
+
+      mobileMenuItems.forEach((i) => {
+        i.addEventListener("click", function () {
+          mobileMenuContainer.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
